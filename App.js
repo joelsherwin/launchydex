@@ -4,8 +4,6 @@ import ReactDOM from "react-dom";
 import CardContainer from "./Components/CardContainer";
 import Header from "./Components/Header";
 
-const FirstComponent = <h1>Hello World</h1>;
-
 const rootElem = document.getElementById("root");
 
 const root = ReactDOM.createRoot(rootElem);

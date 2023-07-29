@@ -1,6 +1,18 @@
-#Muicard-root {
+.Muicard-root {
   background-color: #f0f8ff;
   padding: 10px;
+}
+
+@media only screen and (width <= 1024px) {
+  .launch-card {
+    width: 100% !important;
+  }
+
+  .card-image {
+    width: 100% !important;
+    min-width: 20% !important;
+    max-width: 20% !important;
+  }
 }
 
 .card-container {

@@ -1,0 +1,25 @@
+#Muicard-root {
+  background-color: #f0f8ff;
+  padding: 10px;
+}
+
+.card-container {
+  flex-direction: column;
+  justify-self: center;
+  justify-items: center;
+  margin: 10px;
+  display: grid;
+}
+
+.header {
+  justify-items: center;
+  display: grid;
+}
+
+.header-text {
+  text-align: center;
+  opacity: .9;
+  font-family: Courier New, Courier, monospace;
+}
+
+/*# sourceMappingURL=index.b3e74ffc.css.map */

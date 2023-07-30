@@ -12,19 +12,19 @@ import {
 import "./LaunchCard.css";
 
 const LaunchCard = (props) => {
-  console.log();
   return (
     <Card
       className="launch-card"
       sx={{
         height: 250,
-        width: 800,
+        width: "50%",
         maxWidth: 800,
         margin: 1,
         display: "flex",
       }}
     >
       <CardMedia
+        className="card-image"
         sx={{ width: "100%", objectFit: "cover", maxWidth: 200, minWidth: 200 }}
         image={props.data.image}
         title="green iguana"
@@ -36,13 +36,18 @@ const LaunchCard = (props) => {
         <Typography gutterBottom variant="overline" color="text.secondary">
           {new Date(props.data.net).toDateString()}
         </Typography>
-        <Typography variant="overline" color="text.secondary">
-          {" From " + props.data.pad.location.name}
+        <br />
+        <Typography
+          variant="overline"
+          color="text.secondary"
+          sx={{ lineHeight: 1 }}
+        >
+          {props.data.pad.location.name}
         </Typography>
         <Typography
           variant="subtitle2"
           color="text.secondary"
-          sx={{ overflow: "hidden", height: 100 }}
+          sx={{ position: "relative", top: 5, overflow: "scroll", height: 115 }}
         >
           {props.data.mission
             ? props.data.mission.description

@@ -47,7 +47,7 @@ const LaunchCard = (props) => {
         <Typography
           variant="subtitle2"
           color="text.secondary"
-          sx={{ position: "relative", top: 5, overflow: "scroll", height: 115 }}
+          sx={{ position: "relative", top: 5, overflow: "scroll", height: 100 }}
         >
           {props.data.mission
             ? props.data.mission.description

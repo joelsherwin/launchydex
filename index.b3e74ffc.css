@@ -6,6 +6,7 @@
 @media only screen and (width <= 1024px) {
   .launch-card {
     width: 100% !important;
+    height: 260px !important;
   }
 
   .card-image {
